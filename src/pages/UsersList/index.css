@@ -1,0 +1,26 @@
+.link {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.create-button {
+  display: flex;
+  padding: 20px;
+}
+
+.detail-info {
+  padding: 10px 20px;
+  border: 1px solid #4f4f4f;
+}
+
+.modal-wrapper {
+  position: absolute;
+  padding: 20px 40px;
+  border-radius: 4px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  background: #efefef;
+  border: 1px solid #8f8f8f;
+}

@@ -1,0 +1,11 @@
+.modal-message {
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.modal-wrapper_buttons {
+    display: flex;
+    justify-content: space-around;
+}
