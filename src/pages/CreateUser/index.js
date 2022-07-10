@@ -1,10 +1,10 @@
 import React, { memo } from 'react';
 import { useDispatch } from 'react-redux';
-import {Link, useNavigate} from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import { Button } from '@material-ui/core';
 
 import { CreateUpdateForm } from '../../components';
 import { create, usersAsync } from '../../features/users/usersSlice';
-import {Button} from "@material-ui/core";
 
 const CreateUser = () => {
     const dispatch = useDispatch();
@@ -36,7 +36,7 @@ const CreateUser = () => {
             } finally {
                 dispatch(usersAsync());
                 setAddRequestStatus('idle');
-                navigate('/');
+                navigate('/search');
             }
         }
     }
@@ -45,7 +45,7 @@ const CreateUser = () => {
         <>
             <div className='create-button'>
                 <Button variant='contained' color='primary'>
-                    <Link to={'/'} className='link'>GO BACK</Link>
+                    <Link to={'/search'} className='link'>GO BACK</Link>
                 </Button>
             </div>
             <h1 className='title'>Create User</h1>

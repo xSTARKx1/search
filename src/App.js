@@ -22,9 +22,9 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-            <Route path="/" element={<UsersList />}/>
-            <Route path="/create" element={<CreateUser />}/>
-            <Route path="/update/:id" element={<UpdateUser />}/>
+            <Route path="/search" element={<UsersList />}/>
+            <Route path="/search/create" element={<CreateUser />}/>
+            <Route path="/search/update/:id" element={<UpdateUser />}/>
         </Routes>
       </BrowserRouter>
     </div>

@@ -29,7 +29,7 @@ const AllUsers = () => {
             <h1 className='title'>Users</h1>
             <div className='create-button'>
                 <Button variant='contained' color='primary'>
-                    <Link to={'/create'} className='link'>ADD NEW USER</Link>
+                    <Link to={'/search/create'} className='link'>ADD NEW USER</Link>
                 </Button>
             </div>
             <Table>

@@ -1,10 +1,10 @@
 import React from 'react';
-import {useParams, useNavigate, Link} from 'react-router-dom';
+import { useParams, useNavigate, Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
+import { Button } from '@material-ui/core';
 
 import { CreateUpdateForm } from '../../components';
 import { selectUserById, update, usersAsync } from '../../features/users/usersSlice';
-import {Button} from "@material-ui/core";
 
 const UpdateUser = () => {
     const params = useParams();
@@ -39,7 +39,7 @@ const UpdateUser = () => {
             } finally {
                 dispatch(usersAsync());
                 setAddRequestStatus('idle');
-                navigate('/');
+                navigate('/search');
             }
         }
     }
@@ -48,7 +48,7 @@ const UpdateUser = () => {
         <>
             <div className='create-button'>
                 <Button variant='contained' color='primary'>
-                    <Link to={'/'} className='link'>GO BACK</Link>
+                    <Link to={'/search'} className='link'>GO BACK</Link>
                 </Button>
             </div>
             <h1 className='title'>Update User</h1>
