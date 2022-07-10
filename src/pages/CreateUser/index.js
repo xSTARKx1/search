@@ -36,7 +36,7 @@ const CreateUser = () => {
             } finally {
                 dispatch(usersAsync());
                 setAddRequestStatus('idle');
-                navigate('/npm');
+                navigate('/');
             }
         }
     }
