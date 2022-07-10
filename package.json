@@ -1,6 +1,5 @@
 {
   "name": "users",
-  "homepage":"https://xSTARKx1.github.io/search",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

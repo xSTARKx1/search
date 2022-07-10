@@ -34,7 +34,7 @@ const User = ({user}) => {
                 <TableCell align='center'>
                     <div className='icons-wrapper'>
                         <IconButton aria-label='delete' size='small'>
-                            <Link to={`/search/update/${user._id}`} className='icons-link'><EditIcon /></Link>
+                            <Link to={`/update/${user._id}`} className='icons-link'><EditIcon /></Link>
                         </IconButton>
                         <IconButton aria-label="delete" size='small' >
                             <DeleteIcon className='icons-link' onClick={handleClose}/>

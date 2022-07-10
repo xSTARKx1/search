@@ -39,7 +39,7 @@ const UpdateUser = () => {
             } finally {
                 dispatch(usersAsync());
                 setAddRequestStatus('idle');
-                navigate('/search');
+                navigate('/');
             }
         }
     }
@@ -48,7 +48,7 @@ const UpdateUser = () => {
         <>
             <div className='create-button'>
                 <Button variant='contained' color='primary'>
-                    <Link to={'/search'} className='link'>GO BACK</Link>
+                    <Link to={'/'} className='link'>GO BACK</Link>
                 </Button>
             </div>
             <h1 className='title'>Update User</h1>
